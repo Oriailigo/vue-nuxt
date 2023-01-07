@@ -3,7 +3,7 @@
 </template>
 
 <script>
-export default {
+export default { // nos permite generar cualquier ruta en nuestro proyecto.
   name: 'IndexPage',
 }
 </script>
