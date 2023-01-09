@@ -1,6 +1,6 @@
 <template>
   
-  <div class="box">
+  <div class="box  px-4 py-16">
     <!-- si no coloco esto no me anda -->
     <p>{{$route.params.slug}}</p> 
     <article class="post">
@@ -31,7 +31,7 @@ export default {
     return {
       post: {
         slug: 'mi-primer-post',
-        title: 'Mi primer post',
+        title: 'Mi ultra primer post',
         author: 'Diana Martínez',
         updated: '8/06/2022',
         description: 'Lorem ispum dolor sit amet',
@@ -48,3 +48,10 @@ export default {
   },
 }
 </script>
+<style>
+
+img{
+  width: 50%;
+  height: 50%;
+}
+</style>
