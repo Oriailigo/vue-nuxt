@@ -1,6 +1,8 @@
 <template>
     <div class="article-card">
-        <h3>{{ title }}</h3>
+      <NuxtLink :to="slug"
+      ><h3>{{ title }}</h3></NuxtLink
+    >
         <div class="author">
             <p>Por {{ author }}</p>
             <!-- <small>Fecha de publicación: {{ date.toLoacleDateString() }}</small> -->
@@ -16,9 +18,10 @@
         <v-btn
             depressed
             color="primary"
-            :href="slug"
             >
-            Ir al post
+            <NuxtLink :to="slug">
+              Ir al post
+            </NuxtLink>
         </v-btn>
        
     </div>

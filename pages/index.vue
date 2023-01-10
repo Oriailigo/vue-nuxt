@@ -6,6 +6,7 @@
         <ArticleCard 
           v-for="article in articles"
           :key="article.slug"
+          v-bind="article"
         />
       </main>
     </div>
@@ -18,7 +19,14 @@ export default {
   name: 'IndexPage',
   data(){
     return {
-      articles:[1,2,3,4,5]
+      articles:[
+        {
+          title: "Mi primer post",
+          slug:"mi-primer-post",
+          date: new Date()
+        }
+        
+      ]
     }
   }
 }
