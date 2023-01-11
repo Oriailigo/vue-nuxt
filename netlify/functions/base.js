@@ -5,11 +5,13 @@ const db = new Airtable({
 }).base(process.env.AIRTABLE_BASE_ID)
 
 const headers = {
-  /* Required for CORS support to work */
-  'Access-Control-Allow-Origin': '*',
-  /* Required for cookies, authorization headers with HTTPS */
-  'Access-Control-Allow-Credentials': true,
-}
+    /* Required for CORS support to work */
+    "Access-Control-Allow-Origin": "*",
+    /* Required for cookies, authorization headers with HTTPS */
+    "Access-Control-Allow-Credentials": true,
+    /* Para visualizar mejor el texto en JSON */
+    "content-type": "application/json",
+  };
 
 exports.handler = async function (evt) {
     // espero a que se conecte y luego consulto por todos los articulos
